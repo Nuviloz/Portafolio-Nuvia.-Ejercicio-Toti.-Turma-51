@@ -1,0 +1,89 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: sans-serif; /* Tipo de letra */
+    margin: 0; /* Márgenes exteriores del cuerpo */
+    padding: 0; /* Relleno interior del cuerpo */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 1em 0; /* Relleno interior del encabezado (arriba y abajo) */
+    text-align: center; /* Alineación del texto del encabezado al centro */
+}
+
+/* Estilos para el contenedor del perfil */
+.profile img {
+    width: 150px; /* Ancho de la imagen de perfil */
+    height: 150px; /* Alto de la imagen de perfil */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    margin-bottom: 10px; /* Margen inferior de la imagen */
+}
+
+/* Estilos para la lista no ordenada de la navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno interior de la lista */
+    margin: 10px 0 0; /* Márgenes de la lista (arriba) */
+}
+
+/* Estilos para cada elemento de la lista de navegación */
+nav ul li {
+    display: inline; /* Muestra los elementos en línea horizontalmente */
+    margin: 0 15px; /* Márgenes horizontales entre los elementos */
+}
+
+/* Estilos para los enlaces de navegación */
+nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para la sección principal */
+main {
+    padding: 20px; /* Relleno interior de la sección principal */
+}
+
+/* Estilos generales para las secciones */
+section {
+    background-color: white; /* Color de fondo de las secciones */
+    padding: 20px; /* Relleno interior de las secciones */
+    margin-bottom: 20px; /* Margen inferior de las secciones */
+    border-radius: 8px; /* Bordes redondeados de las secciones */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave de las secciones */
+}
+
+/* Estilos para los encabezados de las secciones */
+h2 {
+    color: #333; /* Color del texto de los encabezados */
+    border-bottom: 2px solid #333; /* Borde inferior de los encabezados */
+    padding-bottom: 10px; /* Relleno inferior del borde */
+    margin-bottom: 15px; /* Margen inferior de los encabezados */
+}
+
+/* Estilos específicos para el párrafo de la sección "Acerca de" */
+.about p {
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+/* Estilos para los párrafos de las secciones "Proyectos" y "Contacto" */
+.projects p,
+.contact p {
+    font-style: italic; /* Texto en cursiva */
+    color: #777; /* Color de texto más claro */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 1em 0; /* Relleno interior del pie de página */
+    position: fixed; /* Fija el pie de página en una posición */
+    bottom: 0; /* Lo posiciona en la parte inferior de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+}

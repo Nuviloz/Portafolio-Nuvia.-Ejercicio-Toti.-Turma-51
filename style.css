@@ -2,7 +2,8 @@
 body {
     font-family: sans-serif; /* Tipo de letra */
     margin: 0; /* Márgenes exteriores del cuerpo */
-    padding: 0; /* Relleno interior del cuerpo */
+    /* Añadimos padding-bottom para evitar que el footer fijo oculte contenido */
+    padding: 0 0 60px 0; /* 60px es un ejemplo, ajusta según altura de tu footer */
     background-color: #f4f4f4; /* Color de fondo */
     color: #333; /* Color del texto */
 }
@@ -70,11 +71,108 @@ h2 {
     line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
 }
 
-/* Estilos para los párrafos de las secciones "Proyectos" y "Contacto" */
+/* Estilos para los párrafos de las secciones "Proyectos" y "Contacto" (si se usan) */
+/* Ya no se usan directamente, pero los dejo por si añades más <p> */
 .projects p,
 .contact p {
     font-style: italic; /* Texto en cursiva */
     color: #777; /* Color de texto más claro */
+}
+
+/* --- NUEVOS ESTILOS --- */
+
+/* Estilos para el Formulario de Contacto */
+.form-group {
+    margin-bottom: 15px; /* Espacio debajo de cada grupo de formulario */
+}
+
+.form-group label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el width/height total */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.error-message {
+    display: block; /* Para que aparezca en su propia línea */
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+.input-error { /* Clase para resaltar campos con error en JS */
+    border-color: red !important; /* Borde rojo para el input con error */
+}
+
+.submit-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+/* Estilos para la Sección de Repositorios de GitHub */
+#repos-container p { /* Estilo para el mensaje de "Cargando..." o "No encontrado" */
+    font-style: italic;
+    color: #777;
+}
+
+.repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.repo-item {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.repo-item h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.repo-item h3 a {
+    color: #0366d6; /* Color azul de GitHub para enlaces */
+    text-decoration: none;
+}
+
+.repo-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.repo-item p {
+    font-style: normal; /* Sobrescribir el italic general si es necesario */
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.repo-item p strong {
+    color: #555;
 }
 
 /* Estilos para el pie de página */
